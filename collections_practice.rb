@@ -20,11 +20,11 @@ def reverse_array(arr)
 end
 
 def kesha_maker(arr)
-  arr.each {|element| element[2] = "$"}
+  arr.each {|word| word[2] = "$"}
 end
 
 def find_a(arr)
-  arr.select{|word| word[0] = "a"}
+  arr.select{|word| word[0] == "a"}
 end
 
 def sum_array(arr)
