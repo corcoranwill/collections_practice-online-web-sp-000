@@ -21,7 +21,9 @@ end
 
 def kesha_maker(arr)
   $_arr = []
-  arr.each do |word, index| 
+  arr.each do |word, index|
+    $_char = word[2]
+    $_word = word.sub($_char, "$") 
     $_arr[index] << word.sub(word[2], "$")
   end
   $_arr
