@@ -20,13 +20,9 @@ def reverse_array(arr)
 end
 
 def kesha_maker(arr)
-  $_arr = []
-  arr.each do |word, index|
-    $_char = word[2]
-    $_word = word.sub($_char, "$")
-    $_arr[index] << $_word
-  end
-  $_arr
+  array.each do |element|
+      element[2] = "$"
+    end
 end
 
 def find_a(arr)
