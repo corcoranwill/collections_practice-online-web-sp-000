@@ -21,7 +21,10 @@ end
 
 def kesha_maker(arr)
   $_arr = []
-  arr.each {|word, index| word.sub(word[2], "$")}
+  arr.each do |word, index| 
+    $_arr[index] << word.sub(word[2], "$")
+  end
+  $_arr
 end
 
 def find_a(arr)
